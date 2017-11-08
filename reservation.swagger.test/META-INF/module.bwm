@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:DisplayBooking="http://www.eds.com/AirlineSOASchema/DisplayBooking/" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:json_1509749106180="http://tns.tibco.com/bw/json/1509749106180" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_t3Ms0MDiEeeISLCFEW3MRA" targetNamespace="http://tns.tibco.com/bw/composite/reservation.swagger.test" name="reservation.swagger.test" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_-qRoRMMuEeetvcMWPxCuwA" name="DisplayBookingPortType" promote="ComponentProcess/DisplayBookingPortType">
+    <sca:interface.wsdl xmi:id="_-qRoSMMuEeetvcMWPxCuwA" interface="http://www.eds.com/AirlineSOASchema/DisplayBooking/#wsdl.interface(DisplayBookingPortType)" scaext:wsdlLocation="../Service%20Descriptors/DisplayBookingService_1.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_BsfcEMMvEeetvcMWPxCuwA" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/ee02916aabae4e4bbc003142278e64c8/SOAPServiceBinding" portTypeQName="DisplayBooking:DisplayBookingPortType" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/reservation.swagger.test/Service%20Descriptors/DisplayBookingService_1.wsdl">
+      <bindingType xmi:id="_BsfcEcMvEeetvcMWPxCuwA"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_Crh3MMMvEeetvcMWPxCuwA" endpointURI="/SOAPServiceBinding/displayBookingPortType/" httpConnector="reservation.swagger.test.HTTPConnectorAirSOA"/>
+      <operationConfiguration xmi:id="_BsfcEsMvEeetvcMWPxCuwA" operationName="displayBooking" action="displayBooking" actionNeeded="true">
+        <bindingType xmi:id="_BsfcE8MvEeetvcMWPxCuwA"/>
+        <messageConfiguration xmi:id="_BsfcFMMvEeetvcMWPxCuwA" messageQName="DisplayBooking:displayBookingSoapIn" wsdlLocation="platform:/resource/reservation.swagger.test/Service%20Descriptors/DisplayBookingService_1.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_BsfcFcMvEeetvcMWPxCuwA" partName="parameters" partElementName="DisplayBooking:displayBooking"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_BsfcFsMvEeetvcMWPxCuwA" messageQName="DisplayBooking:displayBookingSoapOut" messageDirection="OUTPUT" wsdlLocation="platform:/resource/reservation.swagger.test/Service%20Descriptors/DisplayBookingService_1.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_BsfcF8MvEeetvcMWPxCuwA" partName="parameters" partElementName="DisplayBooking:displayBookingResponse"/>
+        </messageConfiguration>
+        <context xmi:id="_BsfcGMMvEeetvcMWPxCuwA">
+          <inputMapping xmi:id="_BsfcGcMvEeetvcMWPxCuwA"/>
+          <outputMapping xmi:id="_BsfcGsMvEeetvcMWPxCuwA" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_BsfcG8MvEeetvcMWPxCuwA" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:service xmi:id="_JbXkUMPUEeeMKfyAvZ6Lpw" name="reservation" promote="ComponentMock-APi/reservation">
+    <sca:interface.wsdl xmi:id="_JbhVUMPUEeeMKfyAvZ6Lpw" interface="http://xmlns.example.com/20171107094258PLT#wsdl.interface(reservation)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_JbmN0MPUEeeMKfyAvZ6Lpw" name="RestService" path="/reservation/{id}" docBasePath="http://localhost:7777/reservation.swagger.test" docResourcePath="Reservation" basePath="/air/reservation/v1.0/read" connector="reservation.swagger.test.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/reservation.swagger.test.reservation-mock-api-Resource.json">
+      <operation xmi:id="_Jbnb8MPUEeeMKfyAvZ6Lpw" operationName="get" nickname="get-air-reservation-v1-0-read-reservation" httpMethod="GET" notes="The retrieval of a reservation and the related status, attributes, and related information." responseStyle="element">
+        <parameters xmi:id="_JbtiksPUEeeMKfyAvZ6Lpw">
+          <parameterMapping xmi:id="_Jbtik8PUEeeMKfyAvZ6Lpw" parameterName="consumer-id" parameterType="Header" dataType="string" description="Application identifier (I.e. consumer id by application such as web check-in, mobile app, etc.)"/>
+          <parameterMapping xmi:id="_JbtilMPUEeeMKfyAvZ6Lpw" parameterName="transaction-id" parameterType="Header" dataType="string" description="Id generated by the consuming application for providing tracing of events and transactions"/>
+          <parameterMapping xmi:id="_JbtilcPUEeeMKfyAvZ6Lpw" parameterName="authorization-token" parameterType="Header" dataType="string" description="Json web token"/>
+        </parameters>
+        <responseStatus xmi:id="_JbsUcMPUEeeMKfyAvZ6Lpw" statusCode="400" reasonPhrase="Error" elementQName="json_1509749106180:Error"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_JbtikMPUEeeMKfyAvZ6Lpw">
+        <parameterMapping xmi:id="_JbtikcPUEeeMKfyAvZ6Lpw" parameterName="id" parameterType="Path" dataType="string" required="true" description=""/>
+      </parameters>
+      <import xmi:id="_Jbs7gMPUEeeMKfyAvZ6Lpw" importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/json/1509749106180"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Jbnb8cPUEeeMKfyAvZ6Lpw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_uBsFkMDiEeeISLCFEW3MRA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uBsFkcDiEeeISLCFEW3MRA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uB1PgMDiEeeISLCFEW3MRA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uB1PgcDiEeeISLCFEW3MRA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uB_AgMDiEeeISLCFEW3MRA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uB_AgcDiEeeISLCFEW3MRA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uB_AgsDiEeeISLCFEW3MRA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uCIxgMDiEeeISLCFEW3MRA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uCIxgcDiEeeISLCFEW3MRA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_-qRoQMMuEeetvcMWPxCuwA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_-qRoQcMuEeetvcMWPxCuwA" processName="AirSOA.AirSOA"/>
+    <sca:service xmi:id="_-qRoQsMuEeetvcMWPxCuwA" name="DisplayBookingPortType">
+      <sca:interface.wsdl xmi:id="_-qRoQ8MuEeetvcMWPxCuwA" interface="http://www.eds.com/AirlineSOASchema/DisplayBooking/#wsdl.interface(DisplayBookingPortType)" scaext:wsdlLocation="../Service%20Descriptors/DisplayBookingService_1.wsdl"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_VKS7gMPSEeeMKfyAvZ6Lpw" name="ComponentMock-APi" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_VKS7gcPSEeeMKfyAvZ6Lpw" processName="reservation.swagger.test.Mock-APi"/>
+    <sca:service xmi:id="_JbNMQMPUEeeMKfyAvZ6Lpw" name="reservation">
+      <sca:interface.wsdl xmi:id="_JbTS4MPUEeeMKfyAvZ6Lpw" interface="http://xmlns.example.com/20171107094258PLT#wsdl.interface(reservation)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

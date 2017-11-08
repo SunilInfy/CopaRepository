@@ -1,0 +1,23 @@
+INDEX VERSION 1.127+D:\COPA\Code\workspace_swagger_api\.metadata\.plugins\org.eclipse.jdt.core
+1773775390.index
+703867090.index
+4178863910.index
+2982056062.index
+2368288093.index
+1153371670.index
+1401685492.index
+1366629879.index
+3514949589.index
+842281108.index
+3174003072.index
+774117648.index
+4175591110.index
+3058687079.index
+87282797.index
+3865991865.index
+3660013120.index
+3765259495.index
+1078882832.index
+241184586.index
+1322091707.index
+1950814024.index

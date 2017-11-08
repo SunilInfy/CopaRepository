@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1509749106180" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1509749106180">
+  <complexType name="Reservation">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="Travelers">
+        <complexType>
+          <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="LoyaltyPrograms">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="StatusCode" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="StatusDescription" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="AllianceStatusCode" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="AllianceStatusDescription" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="Emails">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="EmailAddress" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Domain" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="Phones">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Country">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Continent" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="DialingCode" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="IATACode" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Number" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Extension" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="TravelDocuments">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="IDNumber" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="DateIssue">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="DateExpiration">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Person">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Title">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="FirstName" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="MiddleName" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Surname" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Suffix" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Nickname" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="DateOfBirth">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Gender" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Age" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="CountryIssue">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Continent" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="DialingCode" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="IATACode" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Status">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="SpecialRequests">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="Meals">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="ClassOfService">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Count" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="Seats">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="RowNumber" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Position" type="string"/>
+                  <element maxOccurs="unbounded" minOccurs="0" name="Attributes">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="SeatLocation" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Status">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Price">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="BaseAmount">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Currency">
+                                <complexType>
+                                  <sequence>
+                                    <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                                  </sequence>
+                                </complexType>
+                              </element>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Tax">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Currency">
+                                <complexType>
+                                  <sequence>
+                                    <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                                  </sequence>
+                                </complexType>
+                              </element>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="TotalAmount">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Currency">
+                                <complexType>
+                                  <sequence>
+                                    <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                                  </sequence>
+                                </complexType>
+                              </element>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="Products">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Price">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="BaseAmount">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Currency">
+                                <complexType>
+                                  <sequence>
+                                    <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                                  </sequence>
+                                </complexType>
+                              </element>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Tax">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Currency">
+                                <complexType>
+                                  <sequence>
+                                    <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                                  </sequence>
+                                </complexType>
+                              </element>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="TotalAmount">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Currency">
+                                <complexType>
+                                  <sequence>
+                                    <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                                  </sequence>
+                                </complexType>
+                              </element>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Title">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="FirstName" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="MiddleName" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Surname" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Suffix" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Nickname" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="DateOfBirth">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="BaggageAllowance">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Quantity" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="WeightKg" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="WeightLb" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="SizeAllowMts" type="double"/>
+                  <element maxOccurs="1" minOccurs="0" name="CombinedWeight" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Gender" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Age" type="integer"/>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="Pets">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="AnimalWeight">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="UnitOfMeasure" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="WeightValue" type="integer"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="Price">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="Currency">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="BaseAmount">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Currency">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Tax">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Currency">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="TotalAmount">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                  <element maxOccurs="1" minOccurs="0" name="Currency">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="Rules">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="FlightSegmentsItinerary">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="Itinerary">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="DateTimeDepart">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="DateTimeArrive">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="LocationDepart">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="CityName" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Country">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Continent" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DialingCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="IATACode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="RegionState">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="CountryCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Latitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Longitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="LocationArrive">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="CityName" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Country">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Continent" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DialingCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="IATACode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="RegionState">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="CountryCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Latitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Longitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="Flights">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="AirlineMarketing">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="LogoUrl" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Alliance" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="AirlineOperating">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="LogoUrl" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Alliance" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="FlightNumber" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="DateTimeDepart">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="DateTimeArrive">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="LocationDepart">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="CityName" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Country">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Continent" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DialingCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="IATACode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="RegionState">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="CountryCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Latitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Longitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="LocationArrive">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="CityName" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Country">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Continent" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DialingCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="IATACode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="RegionState">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="CountryCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Latitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Longitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Equipment">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="NoseNumber" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TailNumber" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="ClassOfService">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Count" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="unbounded" minOccurs="0" name="Classes">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Count" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="unbounded" minOccurs="0" name="Meals">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="ClassOfService">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Count" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Distance">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="UnitOfMeasure" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="unbounded" minOccurs="0" name="Messages">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="TravelTime">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Duration" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hours" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="Confirmations">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ConfirmationID" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="AirlineConfirmation">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="LogoUrl" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Alliance" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="Messages">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="Tickets">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="Status">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Number" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Value">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Currency">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="BaseAmount">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Tax">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="TotalAmount">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="FlightSegment">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="AirlineMarketing">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="LogoUrl" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Alliance" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="AirlineOperating">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="LogoUrl" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Alliance" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="FlightNumber" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="DateTimeDepart">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="DateTimeArrive">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Time" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Month" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Day" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Year" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hour" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minute" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Second" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="AMPM" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="LocationDepart">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="CityName" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Country">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Continent" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DialingCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="IATACode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="RegionState">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="CountryCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Latitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Longitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="LocationArrive">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="CityName" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Country">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Continent" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DialingCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="IATACode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="RegionState">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="CountryCode" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Latitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Longitude">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Degrees" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Seconds" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Direction" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="DecimalDegrees" type="integer"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="GMTOffset" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Equipment">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="NoseNumber" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TailNumber" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="ClassOfService">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Count" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="unbounded" minOccurs="0" name="Classes">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Count" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="unbounded" minOccurs="0" name="Meals">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="ClassOfService">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Count" type="integer"/>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Distance">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="UnitOfMeasure" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="unbounded" minOccurs="0" name="Messages">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="TravelTime">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Duration" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Hours" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Minutes" type="integer"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="PassengerName" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="Products">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="Price">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Currency">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="BaseAmount">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Tax">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="TotalAmount">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="Seats">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="RowNumber" type="integer"/>
+            <element maxOccurs="1" minOccurs="0" name="Position" type="string"/>
+            <element maxOccurs="unbounded" minOccurs="0" name="Attributes">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="SeatLocation" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Status">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="Price">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="Currency">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                        <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="BaseAmount">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Tax">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="TotalAmount">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="1" minOccurs="0" name="Value" type="integer"/>
+                        <element maxOccurs="1" minOccurs="0" name="Currency">
+                          <complexType>
+                            <sequence>
+                              <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Name" type="string"/>
+                              <element maxOccurs="1" minOccurs="0" name="Symbol" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                  <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="RuleConditions">
+        <complexType>
+          <sequence/>
+        </complexType>
+      </element>
+      <element maxOccurs="1" minOccurs="0" name="Status">
+        <complexType>
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+    </sequence>
+  </complexType>
+  <element name="Reservations" type="tns:Reservation"/>
+      <complexType name="ErrorMessage">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="Code" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Description" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Key" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="TypeCode" type="string"/>
+    </sequence>
+  </complexType>
+   <element name="Error" type="tns:ErrorMessage"/>
+</schema>

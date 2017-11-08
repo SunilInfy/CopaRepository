@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<displayBookingResponse
+		xmlns="http://www.eds.com/AirlineSOASchema/DisplayBooking/">
+	<OTA_AirBookRS
+			TimeStamp="2011-10-10T06:08:12"
+			Version="4.000"
+			xmlns="http://www.opentravel.org/OTA/2003/05/AirBookRS">
+		<Success />
+		<AirReservation
+				LastModified="2011-10-10T06:07:21Z"
+				CreateDateTime="2011-10-10T06:07:00Z">
+			<AirItinerary
+					xmlns="http://www.opentravel.org/OTA/2003/05/AirCommonTypes">
+				<OriginDestinationOptions>
+					<OriginDestinationOption>
+						<FlightSegment
+								DepartureDateTime="2011-10-10T07:45:00"
+								ArrivalDateTime="2011-10-10T09:44:00"
+								RPH="1"
+								FlightNumber="245"
+								ResBookDesigCode="Y"
+								NumberInParty="1"
+								Status="26"
+								E_TicketEligibility="Eligible"
+								DepartureDay="Mon">
+							<DepartureAirport
+									LocationCode="MEX"
+									xmlns="http://www.opentravel.org/OTA/2003/05/CommonTypes" />
+							<ArrivalAirport
+									LocationCode="LAX"
+									xmlns="http://www.opentravel.org/OTA/2003/05/CommonTypes" />
+							<MarketingAirline Code="Z2" />
+						</FlightSegment>
+					</OriginDestinationOption>
+				</OriginDestinationOptions>
+			</AirItinerary>
+			<PriceInfo
+					xmlns="http://www.opentravel.org/OTA/2003/05/AirCommonTypes">
+				<PTC_FareBreakdowns>
+					<PTC_FareBreakdown>
+						<PassengerTypeQuantity
+								Code="ADT"
+								Quantity="1" />
+						<FareBasisCodes>
+							<FareBasisCode FlightSegmentRPH="1">XYZ</FareBasisCode>
+						</FareBasisCodes>
+						<PassengerFare>
+							<BaseFare
+									Amount="115.60"
+									CurrencyCode="USD" />
+							<Taxes>
+								<Tax
+										TaxCode="AG"
+										Amount="17.30" />
+								<Tax
+										TaxCode="AV"
+										Amount="9.80" />
+							</Taxes>
+							<TotalFare
+									Amount="142.70"
+									CurrencyCode="USD" />
+							<UnstructuredFareCalc>
+								FARE CALC LINE END
+							</UnstructuredFareCalc>
+							<FareBaggageAllowance
+									UnitOfMeasureQuantity="2"
+									UnitOfMeasure="PC"
+									FlightSegmentRPH="1" />
+						</PassengerFare>
+						<TravelerRefNumber
+								RPH="1"
+								SurnameRefNumber="1" />
+						<Endorsements>
+							<Endorsement>ENDORSEMENT ONE</Endorsement>
+						</Endorsements>
+					</PTC_FareBreakdown>
+				</PTC_FareBreakdowns>
+				<PriceRequestInformation PricingSource="Private">
+					<NegotiatedFareCode>422105</NegotiatedFareCode>
+				</PriceRequestInformation>
+			</PriceInfo>
+			<TravelerInfo
+					xmlns="http://www.opentravel.org/OTA/2003/05/AirCommonTypes">
+				<AirTraveler PassengerTypeCode="ADT">
+					<PersonName>
+						<GivenName
+								xmlns="http://www.opentravel.org/OTA/2003/05/CommonTypes">
+							JOHN
+						</GivenName>
+						<Surname
+								xmlns="http://www.opentravel.org/OTA/2003/05/CommonTypes">
+							DOE
+						</Surname>
+					</PersonName>
+					<Telephone
+							PhoneUseType="4"
+							AreaCityCode="555"
+							PhoneNumber="555-1010"
+							Remark="PHONE REMARK"
+							LocationCode="WEB" />
+					<TravelerRefNumber
+							RPH="1"
+							SurnameRefNumber="1" />
+				</AirTraveler>
+				<SpecialReqDetails>
+					<SpecialServiceRequests>
+						<SpecialServiceRequest
+								SSRCode="WCHR"
+								ServiceQuantity="1"
+								Status="11"
+								TravelerRefNumberRPHList="1">
+							<Airline Code="YY" />
+							<Text>
+								MEXLAX0245Y10OCT-1DOE/JOHN.NEED WCHR FOR PAX 1
+							</Text>
+						</SpecialServiceRequest>
+					</SpecialServiceRequests>
+					<OtherServiceInformations>
+						<OtherServiceInformation>
+							<Airline Code="Z2" />
+							<Text>MY OSI</Text>
+						</OtherServiceInformation>
+					</OtherServiceInformations>
+					<Remarks>
+						<Remark>FOR DISPLAY HA BOOKING TESTING</Remark>
+					</Remarks>
+				</SpecialReqDetails>
+
+			</TravelerInfo>
+			<Ticketing
+					TicketingStatus="3"
+					xmlns="http://www.opentravel.org/OTA/2003/05/AirCommonTypes" />
+			<BookingReferenceID
+					Type="14"
+					ID="E9FNVF"
+					xmlns="http://www.opentravel.org/OTA/2003/05/AirCommonTypes" />
+		</AirReservation>
+	</OTA_AirBookRS>
+</displayBookingResponse>

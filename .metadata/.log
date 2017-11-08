@@ -1,0 +1,37 @@
+!SESSION 2017-11-08 11:05:31.883 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation
+
+This is a continuation of log file D:\COPA\Code\workspace_swagger_api\.metadata\.bak_0.log
+Created Time: 2017-11-08 11:06:34.229
+
+!ENTRY org.eclipse.emf.validation 2 70 2017-11-08 11:06:34.229
+!MESSAGE Constraint "com.tibco.bw.sharedresource.trinity.identity.subject.editor.com.tibco.trinity.identity.subject.editor.validation.HasOneStoreConstraint" could not find target EMF type "SubjectConfiguration."
+
+!ENTRY org.eclipse.emf.validation 2 70 2017-11-08 11:06:34.229
+!MESSAGE Constraint "com.tibco.bw.sharedresource.trinity.identity.subject.editor.com.tibco.trinity.identity.subject.editor.validation.KeyAliasNotNullConstraint" could not find target EMF type "SubjectConfiguration."
+
+!ENTRY org.eclipse.emf.validation 2 70 2017-11-08 11:06:34.229
+!MESSAGE Constraint "com.tibco.bw.sharedresource.trinity.identity.subject.editor.com.tibco.trinity.identity.subject.editor.validation.KeyPasswordNotNullConstraint" could not find target EMF type "SubjectConfiguration."
+
+!ENTRY org.eclipse.emf.validation 2 70 2017-11-08 11:06:34.229
+!MESSAGE Constraint "com.tibco.bw.sharedresource.trinity.identity.trust.editor.constraint" could not find target EMF type "TrustConfiguration."
+
+!ENTRY org.eclipse.emf.validation 2 70 2017-11-08 11:06:34.673
+!MESSAGE Constraint "com.tibco.bw.sharedresource.trinity.ssl.editor.com.tibco.trinity.ssl.editor.invalid.remote.host.constraint" could not find target EMF type "SSLServerConfiguration."
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-11-08 11:24:49.278
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-11-08 11:24:49.278
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-11-08 11:24:49.513
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-11-08 11:24:49.513
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
