@@ -9,6 +9,7 @@
     <relativePath>..\reservation.swagger.test.application.parent</relativePath>
   </parent>
   <artifactId>CLE.Framework</artifactId>
+  <packaging>bwmodule</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <outputDirectory>target/classes</outputDirectory>

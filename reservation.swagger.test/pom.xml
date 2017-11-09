@@ -9,6 +9,7 @@
     <relativePath>..\reservation.swagger.test.application.parent</relativePath>
   </parent>
   <artifactId>reservation.swagger.test</artifactId>
+  <packaging>bwmodule</packaging>
   <dependencies>
     <dependency>
       <groupId>com.tibco.plugins</groupId>

@@ -80,17 +80,5 @@
         <profile>default.substvar</profile>
       </properties>
     </profile>
-    <profile>
-      <id>alternateBuildDir</id>
-      <activation>
-        <property>
-        <name>alt.build.dir</name>
-        </property>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <build>
-      <directory>${alt.build.dir}</directory>
-      </build>
-    </profile>
   </profiles>
 </project>
