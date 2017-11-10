@@ -2,7 +2,6 @@ INDEX VERSION 1.127+D:\COPA\Code\workspace_swagger_api\.metadata\.plugins\org.ec
 1773775390.index
 703867090.index
 4178863910.index
-2982056062.index
 2368288093.index
 1153371670.index
 1401685492.index

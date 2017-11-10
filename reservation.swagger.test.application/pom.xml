@@ -9,7 +9,6 @@
     <relativePath>..\reservation.swagger.test.application.parent</relativePath>
   </parent>
   <artifactId>reservation.swagger.test.application</artifactId>
-  <packaging>bwear</packaging>
   <properties>
     <appSpace>reservation.swagger.test-AppSpace</appSpace>
     <keystorePath></keystorePath>
